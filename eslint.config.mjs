@@ -11,5 +11,7 @@ export default {
   extends: ['eslint:recommended'],
   rules: {
     // Add your custom rules here
+    "no-unused-vars": "error",
+    "no-undef": "error"
   },
 };
