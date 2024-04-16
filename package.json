@@ -16,13 +16,14 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
   },
   "lint-staged": {
     "*/**/*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "eslint --fix",
-      "eslint"
+      "eslint ."
     ],
     "*/**/*.{json,css,md}": [
       "prettier --write"
