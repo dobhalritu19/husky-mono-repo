@@ -1,3 +1,3 @@
 function test() {
-  let sdfsfsdfs;
+  let sdfsfsdfssdsd;
 }
