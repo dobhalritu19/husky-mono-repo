@@ -1,0 +1,1 @@
+It has husky with prettier only
