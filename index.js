@@ -1,4 +1,5 @@
 function test1() {
+  sadasd;
 }
 
-test1()
+test1();
