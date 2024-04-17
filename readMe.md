@@ -15,3 +15,11 @@ Both-formate-are-working
      "lint": "eslint . && prettier --write \"**/*.js\""
 
   },
+========lint-staged with eslint and pretter======================
+  
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write"
+    ],
+    "*.js": "eslint --fix"
+  }
