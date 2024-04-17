@@ -1,7 +1,2 @@
-function test1() {
-
-
-    asdhasd
-}
-
-test1()
+const foo = 'bar';
+console.log(foo);
