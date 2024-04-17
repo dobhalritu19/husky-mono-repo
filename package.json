@@ -10,9 +10,7 @@
     "lint": "eslint"
   },
   "lint-staged": {
-    "**/*.js": [
-      "eslint ."
-    ]
+    "*.js": "eslint --fix"
   },
   "keywords": [],
   "author": "",
