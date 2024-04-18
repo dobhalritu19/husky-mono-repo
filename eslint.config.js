@@ -1,19 +1,3 @@
-// import js from "@eslint/js";
-
-// export default [
-//   js.configs.recommended,
-
-//   {
-//     rules: {
-//       "no-unused-vars": "warn",
-//       "no-undef": "warn",
-//       semi: ["error", "always"],
-//     },
-//   },
-// ];
-
-// eslint.config.js
-
 import js from "@eslint/js";
 import typescriptParser from "@typescript-eslint/parser";
 
@@ -23,6 +7,12 @@ export default [
     files: ["**/*.js", "**/*.mjs"],
     languageOptions: {
       parser: typescriptParser,
+      parserOptions: {
+        ecmaVersion: 2021,
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
     rules: {
       "no-unused-vars": "warn",
