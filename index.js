@@ -1,4 +1,3 @@
-const foo = "bar"; // Missing semi-colon
-const foo1 = "bar";
+const foo = "bar";
 
 console.log(foo);

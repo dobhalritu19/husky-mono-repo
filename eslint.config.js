@@ -12,6 +12,7 @@ export default [
         ecmaFeatures: {
           jsx: true,
         },
+        sourceType: "script",
       },
     },
     rules: {
