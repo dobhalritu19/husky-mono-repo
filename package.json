@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "husky-mono-repo-with-prettier",
   "version": "1.0.0",
   "description": "",

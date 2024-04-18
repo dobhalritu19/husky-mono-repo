@@ -1,13 +1,27 @@
+// import js from "@eslint/js";
+
+// export default [
+//   js.configs.recommended,
+
+//   {
+//     rules: {
+//       "no-unused-vars": "warn",
+//       "no-undef": "warn",
+//       semi: ["error", "always"],
+//     },
+//   },
+// ];
+
+// eslint.config.js
+
 import js from "@eslint/js";
 
 export default [
   js.configs.recommended,
-
   {
     rules: {
-      "no-unused-vars": "warn",
-      "no-undef": "warn",
-      semi: ["error", "always"],
+      semi: ["warn", "always"],
     },
+    // ...other config
   },
 ];
