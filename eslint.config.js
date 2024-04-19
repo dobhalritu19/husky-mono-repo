@@ -1,24 +1,30 @@
 import js from "@eslint/js";
 import eslintplugin from "@typescript-eslint/eslint-plugin";
 import eslintparser from "@typescript-eslint/parser";
-
+import globals from "globals";
 export default [
     js.configs.recommended,
     {
+        files: ["**/*.ts", "**/*.tsx"],
         languageOptions: {
             parser: eslintparser,
-            ecmaVersion: 5,
-            sourceType: "script"
+            ecmaVersion: 2022,
+            sourceType: "module",
+            globals: {
+                ...globals.browser,
+                myCustomGlobal: "readonly"
+            }
         },
-        "plugins": [eslintplugin],
-        "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+        plugins: {
+            eslintplugin: eslintplugin
+        },
         rules: {
             "no-unused-vars": "warn",
             "no-undef": "warn",
             "semi": ["error", "always"],
-            "@typescript-eslint/no-unused-vars": "error",
+            "eslintplugin/no-unused-vars": "error",
             // to enforce using type for object type definitions, can be type or interface 
-            "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+            "eslintplugin/consistent-type-definitions": ["error", "type"],
         }
     }
 ];
