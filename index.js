@@ -1,6 +1,6 @@
-const foo1 = "bar"
+const foo3 = "bar"
 
 
 
 
-console.log(foo1);
+console.log(foo3);
