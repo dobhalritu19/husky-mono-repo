@@ -5,7 +5,7 @@ import globals from "globals";
 export default [
     js.configs.recommended,
     {
-        files: ["**/*.ts", "**/*.tsx"],
+        files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
         languageOptions: {
             parser: eslintparser,
             ecmaVersion: 2022,
