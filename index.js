@@ -1,2 +1,4 @@
-const foo = 'bar';
-console.log(foo);
+var favoriteFruits = ["apple", "strawberry", "orange"];
+function addFruit(fruit) {
+    favoriteFruits.push(fruit);
+}
