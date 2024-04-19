@@ -16,6 +16,9 @@ export default [
             "no-unused-vars": "warn",
             "no-undef": "warn",
             "semi": ["error", "always"],
+            "@typescript-eslint/no-unused-vars": "error",
+            // to enforce using type for object type definitions, can be type or interface 
+            "@typescript-eslint/consistent-type-definitions": ["error", "type"],
         }
     }
 ];
