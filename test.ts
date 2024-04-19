@@ -4,7 +4,7 @@
 // console.log(foo);
 
 function greet(name: string) {
-    console.log(`Hello, ${name}!`);
+    console.log(`Hello, ${name}!`)
 }
 
 greet("World");
