@@ -11,6 +11,7 @@ export default [
             sourceType: "script"
         },
         "plugins": [eslintplugin],
+        "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
         rules: {
             "no-unused-vars": "warn",
             "no-undef": "warn",
